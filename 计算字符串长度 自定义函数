@@ -1,0 +1,26 @@
+#include <stdio.h>
+//计算字符串长度 自定义函数
+
+#include <string.h>
+
+int my_strlen(char*str)
+{
+	int could=0;
+	while(*str!='\0')
+	{
+		could++;
+		str++;
+	}
+	return 0; 
+}
+
+
+
+
+int main()
+{
+	char arr[]="bit" ;
+	int len=my_strlen(arr);
+	printf("字符串长度为：%d\n",len);
+	return 0;
+ } 
