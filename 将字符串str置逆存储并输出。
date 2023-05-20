@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int n,i,m;
+	char str[20],a;
+	scanf("%s",&str);
+	n=strlen(str);
+	m=n/2;
+	for(i=0;i<m;i++)
+	{
+		a=str[i];
+		str[i]=str[n-i-1];
+		str[n-i-1]=a;
+	 } 
+	printf("字符串长度为：%d\n",n);
+	printf("中间位置m=%d\n",m); 
+	printf("%s",str);
+	return 0;
+}
+//1、输入str，求字符串长度 n=strlen(str),计算置逆区间的中间位置m= n/2;
+2、循环变量i从0~m，重复执行下述操作
+2.1将位置i的字符与位置n-1-i的字符交换
+2.2i++o
