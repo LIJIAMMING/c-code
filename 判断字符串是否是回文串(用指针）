@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+int TurnString(char*str)
+{
+	
+	char*p, *q;
+	p = str;
+	q = str + strlen(str) - 1;
+	for (; p <= q; p++, q--)
+	{
+		if (*p != *q)
+		{
+			return 0;
+		}
+		return 1;
+	}
+}
+int main()
+{
+	char str[80];
+	printf("请输入字符串：");
+	scanf("%s", str);
+	if (TurnString(str))
+		printf("该字符串是回文！\n");
+	else
+		printf("该字符串不是回文！\n");
+	return 0;
+
+}
