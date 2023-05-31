@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+
+//指针加整数
+//int main()
+//{
+//	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int* p = arr;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d\n", *p);
+//		p = p + 1;
+//	}
+//
+//	return 0;
+//}
+
+
+//指针减指针：得到指针域指针之间元素个数的绝对值
+//int main()
+//{
+//	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	printf("%d\n", arr[9] - arr[0]);
+//
+//	return 0;
+//}
+
+
+
+
+//strlen求字符串长度用指针
+//int my_strlen(char* str)
+//{
+//	char* start = str;
+//	char* end = str;
+//	while (*end != '\0')
+//	{
+//		end++;
+//	}
+//	return end - start;
+//}
+//int main()
+//{
+//	char str[] = "bit";
+//	int len = my_strlen(str);
+//	printf("%d\n", len);
+//	return 0;
+//}
+//int main()
+//{
+//	int p = 10;
+//	int* pa = &p;
+//	int** ppa = &pa;//ppa就是二级指针
+//	int*** pppa = &ppa;//pppa就是三级指针
+//	return 0;
+//}
