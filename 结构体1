@@ -1,0 +1,43 @@
+#include <stdio.h>
+//结构体变量初始化
+//typedef命名函数
+//typedef struct stu
+//{
+//	//成员变量
+//	char name[20];
+//	short age;
+//	char sex[5];
+//	char tele[20];
+//}stu;
+//
+//int main()
+//{
+//	stu s1 = { "航三",  20,  "男" ,  "13088887777" };//局部变量初始化
+//
+//	return 0;
+//}
+
+//嵌套结构体
+//struct T
+//{
+//	int a;
+//	char c;
+//	char arr[20];
+//	double d;
+//};
+//struct S
+//{
+//	char ch[10];
+//	struct T t;
+//	char *pc;
+//};
+//int main()
+//{
+//	char arr[] = "bit hello!\n";
+//	struct S s = { "hehe", { 10, 'e', "hello world!", 3.14 }, arr };
+//	printf("%s\n", s.ch);//hehe
+//	printf("%s\n", s.t.arr);//hello world
+//	printf("%lf\n", s.t.d);//3.14
+//	printf("%s\n", s.pc);//bit hello
+//	return 0;
+//}
