@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int i,N,s,k;
+	printf("请输入0-10之间的数（不包括0和10）");
+	scanf("%d",&N);
+	for(i=1;i<=N;i++){
+		for(s=1;s<=N-i;s++){
+			printf(" ");
+		} 
+		for(k=1;k<=i;k++){
+			printf("%d ",i);
+		}
+		printf("\n");
+	}	
+	
+ } 
