@@ -1,0 +1,22 @@
+#include <stdio.h>
+//统计输入符号数量$结束 
+int main()
+{	
+	char i;
+	char abc=0; 
+	char number=0;
+	char space=0;
+	char other=0; 
+	printf("请输入：");
+	while((i=getchar())!='$')
+		if(('A'<=i&&i<='Z')||('a'<=i&&i<='z'))
+			abc++;
+		else if(i>='0'&&i<='9')
+			number++;
+		else if(i==' ')
+			space++;
+		else
+			other++;
+	printf("字母:%d 数字:%d 空格:%d 其他:%d",abc,number,space,other);
+}
+
