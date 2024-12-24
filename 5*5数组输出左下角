@@ -1,0 +1,19 @@
+#include <stdio.h> 
+int main()
+{
+	int i=1,j,k;
+	int a[5][5];
+	for(j=0;j<5;j++){
+		for(k=0;k<5;k++){
+			a[j][k]=i++;
+			printf("%4d\n",a[j][k]);
+		}
+	}
+	for(j=0;j<5;j++){
+		for(k=0;k<=j;k++){
+			printf("%4d",a[j][k]);
+			printf("\n");
+		}
+	}
+	return 0;
+}
