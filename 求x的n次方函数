@@ -1,0 +1,18 @@
+#include<stdio.h>
+int mypow(int x,int y)
+{
+	int i,m=1;
+	for(i=1;i<=y;i++){
+		m=m*x;
+	}
+	return(m);
+}
+int main()
+{
+	int x,n,pow;
+	printf("请输入两个数字x n :\n");
+	scanf("%d%d",&x,&n);
+	pow=mypow(x,n);
+	printf("%d的%d次方为%d",x,n,pow);
+	return 0;
+} 
