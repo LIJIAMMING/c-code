@@ -1,0 +1,11 @@
+void main()
+{
+    char c;
+    c=getchar();//=scanf("%c",&c);
+    if(c>='A'&&c<='Z')  //(c>=’a’&&c<=’Z’)
+   //c=c+32;
+     putchar(c+32);
+     else
+     putchar(c);
+    //putchar(c);//printf("%c",c);
+}
