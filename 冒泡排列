@@ -1,0 +1,27 @@
+#include "stdio.h"
+void main()
+{
+	int i,j,t,a[5];
+	printf("请输入五个数：\n");
+	for(i=0;i<5;i++){
+		scanf("%d",&a[i]);
+	} 
+	printf("排序前：");
+	for(i=0;i<5;i++){
+		printf("%d ",a[i]);
+	} 
+	printf("\n");
+	for(i=0;i<5;i++){
+		for(j=0;j<5;j++){
+			if(a[j]>a[j+1]){
+				t=a[j];
+				a[j]=a[j+1];
+				a[j+1]=t;
+			}
+		}
+	}
+	printf("排序后：");
+	for(i=0;i<5;i++){
+		printf("%d ",a[i]);
+	} 
+ } 
