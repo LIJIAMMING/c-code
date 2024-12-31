@@ -1,0 +1,41 @@
+#include<stdio.h>
+//float fun(int n)
+//{
+//	int i;
+//	float sum1=0,sum2=0; 
+//	float s=0;
+//	for(i=1;i<=n;i++){
+//		sum1=sum1+i;
+//		sum2=1/sum1;
+//		s=s+sum2;
+//	}
+//	return s;
+//}
+//int main()
+//{
+//	int n;
+//	printf("请输入：");
+//	scanf("%d",&n);
+//	float s=fun(n);
+//	printf("结果为：%f",s);
+//	return 0;
+//} 
+float fun(int n)
+{
+	int i;
+	float s=1.0,t=1.0; 
+	for(i=2;i<=n;i++){
+		t=t+i;
+		s=s+1/t;
+	}
+	return s;
+}
+int main()
+{
+	int n;
+	printf("请输入：");
+	scanf("%d",&n);
+	float s=fun(n);
+	printf("结果为：%f",s);
+	return 0;
+} 
