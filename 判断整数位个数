@@ -1,0 +1,21 @@
+#include "stdio.h"
+int fun(int m){
+	int sum=0;
+	if(m<0){
+		m=-m;
+	}
+	while(m>0)
+	{
+		m=m/10;
+		sum+=1;
+	}	
+	return sum;
+}
+void main()
+{	
+	int m,n,p;
+	printf("请输入m:");  
+	scanf("%d",&m);
+	p=fun(m);
+	printf("整数位个数为：%d",p);
+}
