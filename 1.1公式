@@ -1,0 +1,28 @@
+#include "stdio.h"
+float fun(int m,int n){
+	int i,m1=1,n1=1,mn=1;
+	float p;
+	for(i=1;i<=m;i++){
+		m1=m1*i;
+	}
+	for(i=1;i<=n;i++){
+		n1=n1*i;
+	}
+	for(i=1;i<=m-n;i++){
+		mn=mn*i;
+	}
+	p=m1/(n1*mn);
+	return p;
+}
+void main()
+{	
+	int m,n;
+	float p;
+	printf("请输入两个数m和n且m>n\n");
+	printf("请输入m:");  
+	scanf("%d",&m);
+	printf("请输入n:"); 
+	scanf("%d",&n);
+	p=fun(m,n);
+	printf("打印结果为：%.6f",p);
+}
